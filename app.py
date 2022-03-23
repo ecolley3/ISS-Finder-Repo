@@ -203,17 +203,17 @@ def help():
     logging.info("The information on each route and what they do.")
     describe = "ISS Sighting Location\n"
     describe += "/ (GET) Information is outputted\n"
-    describe += "/load_data (POST) Resets and loads data from a file\n"
+    describe += "/load_data ((POST) Resets and loads data from a file)\n"
     describe += "Routes to find position and velocity data:\n\n"
-    describe += "/epoch (GET) lists epochs for postion and velocity data\n"
-    describe += "/epoch/<epoch> (GET) lists data for each specific epoch\n"
+    describe += "/epoch ((GET) lists epochs for postion and velocity data)\n"
+    describe += "/epoch/<epoch> ((GET) lists data for each specific epoch)\n"
     describe += "Routes to find ISS sighting data\n\n"
-    describe += "/count (GET) lists each country found in the sighting data\n"
-    describe += "/count/<count> (GET) lists data for each specific country\n"
-    describe += "/count/<count>/region (GET) lists each region found in a specific country\n"
-    describe += "/count/<count>/region/<region> (GET) lists data for each specific region\n"
-    describe += "/count/<count>/region/<region>/city (GET) lists each city in a specific region\n"
-    describe += "/count/<count>/region/<region>/city/<city> (GET) lists data for each specific city \n"
+    describe += "/count ((GET) lists each country found in the sighting data)\n"
+    describe += "/count/<count> ((GET) lists data for each specific country)\n"
+    describe += "/count/<count>/region ((GET) lists each region found in a specific country)\n"
+    describe += "/count/<count>/region/<region> ((GET) lists data for each specific region)\n"
+    describe += "/count/<count>/region/<region>/city ((GET) lists each city in a specific region)\n"
+    describe += "/count/<count>/region/<region>/city/<city> ((GET) lists data for each specific city) \n"
     return describe
 
 if __name__ == '__main__':
