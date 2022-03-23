@@ -12,7 +12,7 @@ build:
 	docker build -t ecolley3/iss-finder:Midterm .
 
 run:
-	docker run --name "iss-finder" -d -p 5009:5000 ecolley3/iss-finder:Midterm
+	docker run --name "iss-finder-c" -d -p 5009:5000 ecolley3/iss-finder:Midterm
 
 push:
 	docker push ecolley3/iss-finder:Midterm
