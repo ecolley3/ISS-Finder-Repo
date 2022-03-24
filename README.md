@@ -8,8 +8,8 @@ This project takes data from the International Space Station and creates a conta
 1) Paste the link `https://data.nasa.gov/Space-Science/ISS_COORDS_2022-02-13/r6u8-bhhq` into your web browser and login to isp in your shell.
 2) Under the public distribution file, right click the XML option and copy the link address.
 3) Use the wget command and paste the link address afterward: `wget https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_OEM/ISS.OEM_J2K_EPH.xml`
-4) Now go back to the ISS website and find and copy the XML link for `XMLsightingData_citiesUSA04`
-5)Use wget with the link again to download the sighting data: `wget https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_sightings/XMLsightingData_citiesUSA04.xml`
+4) Now go back to the ISS website and find and copy the XML link for `XMLsightingData_citiesUSA04`.
+5) Use wget with the link again to download the sighting data: `wget https://nasa-public-data.s3.amazonaws.com/iss-coords/2022-02-13/ISS_sightings/XMLsightingData_citiesUSA04.xml`
 
 ### Building the Docker File
 1) First, pull the files from Docker by using `docker pull ecolley3/iss-finder:Midterm`
@@ -45,7 +45,7 @@ Successfully tagged ecolley3/iss-finder:Midterm
 ```
 ### Running the Application Using Curl
 1) Open two shell terminals for ease of use in this process
-2)In the first window, run these three commands:
+2) In the first window, run these three commands:
 ```bah
 export FLASK_APP=app.py
 export FLASK_ENV=development
