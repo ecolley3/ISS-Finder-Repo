@@ -54,6 +54,7 @@ flask run -p 5009
 3) In the second window, run this command `curl localhost:5009/load_data -X POST` to read the data from the files.
 4) You can then run the `curl localhost:5009/help` command to see each app route and what they will output.
 5) Use a route to find the specific data you are looking for. 
+
 Example: `curl localhost:5009/count/United_States/region/Illinois/city`
 Output:
 
